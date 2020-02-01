@@ -33,23 +33,15 @@
             // 
             // listBox1
             // 
+            this.listBox1.AllowDrop = true;
             this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Items.AddRange(new object[] {
-            "음",
-            "악",
-            "읻ㅂ",
-            "ㄴㅁㄴㅇ",
-            "ㅁㄴㅇ",
-            "ㅁㄴ",
-            "ㅊㅌㅋ",
-            "ㅌㅊ",
-            "ㅂㅁㅈㄷ",
-            "ㅁㄴㅇ"});
             this.listBox1.Location = new System.Drawing.Point(0, -1);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(250, 302);
             this.listBox1.TabIndex = 0;
+            this.listBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox1_DragDrop);
+            this.listBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox1_DragEnter);
             // 
             // Form_MusicList
             // 
