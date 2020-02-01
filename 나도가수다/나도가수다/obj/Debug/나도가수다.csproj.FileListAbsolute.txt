@@ -1,0 +1,48 @@
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\bin\Debug\나도가수다.exe.config
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\bin\Debug\나도가수다.exe
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\bin\Debug\나도가수다.pdb
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\bin\Debug\MetroFramework.Design.dll
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\bin\Debug\MetroFramework.dll
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.csprojAssemblyReference.cache
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.Properties.Resources.resources
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.csproj.GenerateResource.cache
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.csproj.CoreCompileInputs.cache
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.csproj.CopyComplete
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.exe
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.pdb
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.Form_Browser.resources
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.Form_Player.resources
+C:\Users\성훈\Desktop\졸업작품\나도가수다\나도가수다\obj\Debug\나도가수다.Form_MusicList.resources
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\bin\Debug\나도가수다.exe.config
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\bin\Debug\나도가수다.exe
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\bin\Debug\나도가수다.pdb
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\bin\Debug\MetroFramework.Design.dll
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\bin\Debug\MetroFramework.dll
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.csprojAssemblyReference.cache
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.Form_Browser.resources
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.Form_Player.resources
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.Form_MusicList.resources
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.Properties.Resources.resources
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.csproj.GenerateResource.cache
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.csproj.CoreCompileInputs.cache
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.csproj.CopyComplete
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.exe
+C:\Users\성훈\Desktop\졸업작품\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d (3)\GraduationPortfolio-8208f0f804cc5ba790ab4483bc2181e69679678d\나도가수다\나도가수다\obj\Debug\나도가수다.pdb
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\bin\Debug\나도가수다.exe.config
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\bin\Debug\나도가수다.exe
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\bin\Debug\나도가수다.pdb
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\bin\Debug\MetroFramework.Design.dll
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\bin\Debug\MetroFramework.dll
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.csprojAssemblyReference.cache
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.Form_Browser.resources
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.Form_Player.resources
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.Form_MusicList.resources
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.Properties.Resources.resources
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.csproj.GenerateResource.cache
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.csproj.CoreCompileInputs.cache
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.csproj.CopyComplete
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.exe
+C:\Users\Jintae\Desktop\git\GraduationPortfolio\나도가수다\나도가수다\obj\Debug\나도가수다.pdb
