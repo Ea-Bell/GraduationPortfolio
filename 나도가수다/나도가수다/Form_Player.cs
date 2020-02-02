@@ -113,12 +113,7 @@ namespace 나도가수다
 
         private void metroButton3_Click(object sender, EventArgs e)
         {
-            string[] str;
-            Form_MusicList List = new Form_MusicList();
-
-            foreach (string str1 in List.File)
-            {
-            }
+           
            
             //if (fMusicList
         }
