@@ -13,12 +13,7 @@ namespace 나도가수다
 {
     public partial class Form_MusicList : MetroFramework.Forms.MetroForm
     {
-       string[] files;
-
-        public string [] File
-        {
-            get; set;
-        }
+       
         public Form_MusicList()
         {
             InitializeComponent();
@@ -26,10 +21,9 @@ namespace 나도가수다
 
         private void listBox1_DragDrop(object sender, DragEventArgs e)
         {
-             File = (string[])e.Data.GetData(DataFormats.FileDrop);
-            //files = Path.GetFileName(files);
-            foreach (string file in files) listBox1.Items.Add(File);
-            
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+            foreach (string file in files) metroListView1.Items.Add(file);
+            metroListView1.Items[0].Selected = true;
         }
 
         private void listBox1_DragEnter(object sender, DragEventArgs e)
@@ -37,14 +31,6 @@ namespace 나도가수다
             e.Effect = DragDropEffects.Copy;
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }

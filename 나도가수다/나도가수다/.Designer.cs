@@ -32,16 +32,15 @@
             this.metroTrackBar1 = new MetroFramework.Controls.MetroTrackBar();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
-            this.metroButton5 = new MetroFramework.Controls.MetroButton();
+            this.btnPause = new MetroFramework.Controls.MetroButton();
+            this.btnStop = new MetroFramework.Controls.MetroButton();
+            this.btnNext = new MetroFramework.Controls.MetroButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroScrollBar1 = new MetroFramework.Controls.MetroScrollBar();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton7 = new MetroFramework.Controls.MetroButton();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.btnReturn = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,51 +62,40 @@
             this.metroButton1.TabIndex = 13;
             this.metroButton1.Text = "X";
             this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroStyleManager1
             // 
             this.metroStyleManager1.Owner = this;
             this.metroStyleManager1.Style = MetroFramework.MetroColorStyle.Teal;
             // 
-            // metroButton2
+            // btnPause
             // 
-            this.metroButton2.Location = new System.Drawing.Point(8, 34);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(38, 38);
-            this.metroButton2.TabIndex = 15;
-            this.metroButton2.Text = "|◀";
-            this.metroButton2.UseSelectable = true;
+            this.btnPause.Location = new System.Drawing.Point(67, 34);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(38, 38);
+            this.btnPause.TabIndex = 16;
+            this.btnPause.Text = "▷||";
+            this.btnPause.UseSelectable = true;
             // 
-            // metroButton3
+            // btnStop
             // 
-            this.metroButton3.Location = new System.Drawing.Point(67, 34);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(38, 38);
-            this.metroButton3.TabIndex = 16;
-            this.metroButton3.Text = "▷||";
-            this.metroButton3.UseSelectable = true;
-            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            this.btnStop.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnStop.Location = new System.Drawing.Point(126, 34);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(38, 38);
+            this.btnStop.TabIndex = 17;
+            this.btnStop.Text = "■";
+            this.btnStop.UseSelectable = true;
             // 
-            // metroButton4
+            // btnNext
             // 
-            this.metroButton4.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton4.Location = new System.Drawing.Point(126, 34);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(38, 38);
-            this.metroButton4.TabIndex = 17;
-            this.metroButton4.Text = "■";
-            this.metroButton4.UseSelectable = true;
-            // 
-            // metroButton5
-            // 
-            this.metroButton5.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton5.Location = new System.Drawing.Point(183, 34);
-            this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(38, 38);
-            this.metroButton5.TabIndex = 18;
-            this.metroButton5.Text = "▶|";
-            this.metroButton5.UseSelectable = true;
+            this.btnNext.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnNext.Location = new System.Drawing.Point(183, 34);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(38, 38);
+            this.btnNext.TabIndex = 18;
+            this.btnNext.Text = "▶|";
+            this.btnNext.UseSelectable = true;
             // 
             // metroScrollBar1
             // 
@@ -123,7 +111,6 @@
             this.metroScrollBar1.TabIndex = 20;
             this.metroScrollBar1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroScrollBar1.UseSelectable = true;
-            this.metroScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.metroScrollBar1_Scroll);
             // 
             // metroLabel1
             // 
@@ -143,16 +130,6 @@
             this.metroLabel2.TabIndex = 22;
             this.metroLabel2.Text = "+";
             // 
-            // metroButton7
-            // 
-            this.metroButton7.Location = new System.Drawing.Point(8, 122);
-            this.metroButton7.Name = "metroButton7";
-            this.metroButton7.Size = new System.Drawing.Size(65, 22);
-            this.metroButton7.TabIndex = 23;
-            this.metroButton7.Text = "폴더추가";
-            this.metroButton7.UseSelectable = true;
-            this.metroButton7.Click += new System.EventHandler(this.metroButton7_Click);
-            // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
@@ -161,6 +138,15 @@
             this.metroLabel3.Size = new System.Drawing.Size(0, 0);
             this.metroLabel3.TabIndex = 24;
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Location = new System.Drawing.Point(8, 34);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(38, 38);
+            this.btnReturn.TabIndex = 15;
+            this.btnReturn.Text = "|◀";
+            this.btnReturn.UseSelectable = true;
+            // 
             // Form_Player
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -168,14 +154,13 @@
             this.ClientSize = new System.Drawing.Size(250, 150);
             this.ControlBox = false;
             this.Controls.Add(this.metroLabel3);
-            this.Controls.Add(this.metroButton7);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroScrollBar1);
-            this.Controls.Add(this.metroButton5);
-            this.Controls.Add(this.metroButton4);
-            this.Controls.Add(this.metroButton3);
-            this.Controls.Add(this.metroButton2);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnStop);
+            this.Controls.Add(this.btnPause);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroTrackBar1);
             this.Name = "Form_Player";
@@ -184,9 +169,6 @@
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form_Player_MouseClick);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form_Player_MouseMove);
-            this.Move += new System.EventHandler(this.Form_Player_Move);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -197,16 +179,15 @@
         private MetroFramework.Controls.MetroTrackBar metroTrackBar1;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Components.MetroStyleManager metroStyleManager1;
-        private MetroFramework.Controls.MetroButton metroButton5;
-        private MetroFramework.Controls.MetroButton metroButton4;
-        private MetroFramework.Controls.MetroButton metroButton3;
-        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton btnNext;
+        private MetroFramework.Controls.MetroButton btnStop;
+        private MetroFramework.Controls.MetroButton btnPause;
         private MetroFramework.Controls.MetroScrollBar metroScrollBar1;
         private System.Windows.Forms.Timer timer1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroButton metroButton7;
         private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroButton btnReturn;
     }
 }
 
