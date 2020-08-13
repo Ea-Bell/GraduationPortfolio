@@ -1,0 +1,14 @@
+
+7월 06, 2020 22:42:40.61 NEW SESSION
+7월 06, 2020 22:42:40.61 [2652:12676:0706/224240.606:ERROR:cache_util_win.cc(21)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+7월 06, 2020 22:42:40.63 [2652:12676:0706/224240.608:ERROR:cache_util.cc(139)] Unable to move cache folder C:\Users\EaBEll\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\EaBEll\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+7월 06, 2020 22:42:40.64 [2652:12676:0706/224240.608:ERROR:disk_cache.cc(184)] Unable to create cache
+7월 06, 2020 22:42:40.66 [2652:12676:0706/224240.608:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+7월 06, 2020 22:42:42.01 기존 브라우저 세션에서 여는 중입니다.
+7월 06, 2020 23:20:08.18 [14460:5016:0706/232008.179:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+7월 07, 2020 24:31:31.97 [7264:20292:0707/003131.971:ERROR:socket_stream.cc(218)] Closing stream with result -2
+
+7월 07, 2020 16:19:43.34 NEW SESSION
+7월 07, 2020 16:19:43.34 [13104:7716:0707/161943.343:ERROR:socket_stream.cc(218)] Closing stream with result -2
+7월 07, 2020 17:30:25.48 [13104:7716:0707/173025.487:ERROR:socket_stream.cc(218)] Closing stream with result -2
+7월 07, 2020 17:33:22.02 [13104:7716:0707/173322.023:ERROR:socket_stream.cc(218)] Closing stream with result -2

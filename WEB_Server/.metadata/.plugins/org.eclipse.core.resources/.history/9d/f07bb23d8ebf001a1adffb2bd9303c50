@@ -1,0 +1,85 @@
+package upload;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+
+/**
+ * Servlet implementation class UpLoad
+ */
+@WebServlet("/UpLoad.do")
+public class UpLoad extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public UpLoad() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	doPost(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String saveFolder="/upload";
+		String saveFolder2="/webTest/download";
+		ServletContext context = getServletContext();
+		String savedir = context.getRealPath(saveFolder);
+		String conpath = request.getContextPath();
+		System.out.println(conpath);
+
+
+		//저장 최대 용량
+		 int maxSize = 1024*1024*15;
+
+		//한글 설정
+		String encoding = "utf-8";
+		try{
+		//사용자가 전송한 텍스트 정보 및 파일을 '/storage'에 저장하기(MultipartRequest의 매개변수에 맞춰서 위에서 지정한 변수를 넣어준 것)
+		MultipartRequest mr=new MultipartRequest(
+				request,
+				savedir,
+				maxSize,
+			encoding,
+				new DefaultFileRenamePolicy()
+				);
+		String music_name = mr.getParameter("music_name");
+		String album      = mr. getParameter("album");
+
+
+
+
+		String music_file= mr.getFilesystemName("music_file");
+		String music_ofile = mr.getOriginalFileName("music_file");
+
+		//String music_pictuer=mr.getFilesystemName("music_pictuer");
+		//String pictuer_ofile = mr.getOriginalFileName("music_pictuer");
+		
+		RequestDispatcher dispatcher = request.getRequestDispatcher("");
+	dispatcher.forward(request, response);
+		
+	}catch (Exception e) {
+		// TODO: handle exception
+	}
+
+}
+	}

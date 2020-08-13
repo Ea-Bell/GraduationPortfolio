@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>비밀번호 바꾸기</title>
+</head>
+<body>
+	<form action="/ChangePasswordHandler" method="post">
+		<div>
+			현재 암호: <br />
+			<input type="password" name="curPwd">
+			<c:if test="${param.pwd=='currentPwd' }">현재 암호를 입력하세요 </c:if>
+			<c:if test="${param.pwd=='badCurPwd'}">현재 암호가 일치하지 않습니다</c:if>
+		</div>
+		<div>
+			새 암호:<br />
+			<input type="password" name="newPwd">
+			<c:if test="${param.pwd=='newPwd'}">새 암호를 입력하세요.</c:if>
+		</div>
+		<div>
+			<input type="submit" value="암호변경">
+		</div>
+	</form>
+</body>
+</html>

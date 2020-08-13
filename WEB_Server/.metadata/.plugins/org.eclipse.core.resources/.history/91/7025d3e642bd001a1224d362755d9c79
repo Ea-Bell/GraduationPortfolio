@@ -1,0 +1,18 @@
+package article.service;
+
+import java.util.Map;
+
+public class ModifyRequest {
+
+	private String iserId;
+	private int articleNumber;
+	private String title;
+	private String content;
+	
+	
+	public void validate(Map<String, Boolean>errors) {
+		if(title ==null || title.trim().isEmpty()) {
+			errors.put("title", Boolean.TRUE);
+		}
+	}
+}

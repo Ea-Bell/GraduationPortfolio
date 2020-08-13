@@ -1,0 +1,80 @@
+package music.command;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Enumeration;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+
+/**
+ * Servlet implementation class WriterMusicHandler2
+ */
+@WebServlet("/registmusic.do")
+public class WriterMusicHandler extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public WriterMusicHandler() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doPost(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		// TODO Auto-generated method stub
+				
+		 String music_file = request.getSession().getServletContext().getRealPath("music_file");
+		 String music_picture = request.getSession().getServletContext().getRealPath("music_picture");
+		 RequestDispatcher rd = null;
+	        String fileName = "";
+	        File file = null;
+	        String savePath = "C:/workspace/my/saveFile"; //<- 요기를 바꿔주면 다운받는 경로가 바뀝니다.
+	        
+	        Enumeration files = null;
+	        
+	        int maxSize = 5 * 1024 * 1024; // 최대 업로드 파일 크기 5MB(메가)로 제한
+	        try {
+	         MultipartRequest multi = new MultipartRequest(request,
+	           savePath, maxSize, "euc-kr", new DefaultFileRenamePolicy());
+	         fileName = multi.getFilesystemName("uploadFile"); // 파일의 이름 얻기
+	         
+	         files = multi.getFileNames();
+	         String name = (String)files.nextElement();         
+	         file = multi.getFile(name);
+	         if (fileName == null) { // 파일이 업로드 되지 않았을때
+	          System.out.print("파일 업로드 되지 않았음");
+	         } else { // 파일이 업로드 되었을때
+	             System.out.println("User Name : " + multi.getParameter("user"));           
+	             System.out.println("File Name  : " + fileName);
+	         }//else
+	        } catch (Exception e) {
+	            System.out.print("예외 발생 : " + e);
+	        }//catch
+	        rd = getServletContext().getRequestDispatcher("/uploadfileview.jsp?fileName="+ fileName +"&filelength="+file.length());
+
+	        rd.forward(request, response);
+
+		}
+	}

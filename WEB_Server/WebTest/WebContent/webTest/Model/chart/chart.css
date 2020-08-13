@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+#music_album{
+ width:70px;
+ height:70px;
+}
+music_icon{
+	height: 4px;
+	 width: 4px;
+	 
+}
+
+
+  table {
+    width: 70%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+  }
+  th{
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+
+  }
+  
+  
+ td {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+text-overflow:ellipsis; 
+overflow:hidden;
+
+  }

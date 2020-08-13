@@ -1,0 +1,9 @@
+package article.service;
+
+public class ModifyRequest {
+
+	private String iserId;
+	private int articleNumber;
+	private String title;
+	private String content;
+}

@@ -1,0 +1,7 @@
+package article.service;
+
+public class ModifyRequest {
+
+	private String iserId;
+	
+}

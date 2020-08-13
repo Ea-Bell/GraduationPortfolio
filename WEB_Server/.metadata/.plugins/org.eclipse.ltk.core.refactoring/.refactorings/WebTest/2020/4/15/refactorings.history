@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;fileUpLoad&apos; to &apos;webTest&apos;" description="Move &apos;fileUpLoad&apos; to &apos;webTest&apos;" destination="WebContent/webTest" element1="WebContent/webTest/View/fileUpLoad" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1586321397632" updateReferences="true"/>
+</session>

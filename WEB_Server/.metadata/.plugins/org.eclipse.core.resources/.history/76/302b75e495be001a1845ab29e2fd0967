@@ -1,0 +1,22 @@
+package article.service;
+
+import java.util.Map;
+
+import article.model.Article;
+
+public class DleteRequest {
+	private String userId;
+	private int articleNumber;
+	public DleteRequest(String userId, int articleNumber) {
+		super();
+		this.userId = userId;
+		this.articleNumber = articleNumber;
+	}
+	public String getUserId() {
+		return userId;
+	}
+	public int getArticleNumber() {
+		return articleNumber;
+	}
+
+}

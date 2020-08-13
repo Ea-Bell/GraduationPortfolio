@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+#checkId
+{
+	border: 0;
+	height:20px;
+	width: 30px;
+	background-color: red;
+}
+#hr
+{
+	width: 350px;
+}
+#id
+{
+	width:  350px; 
+	height: 25px;
+}
+#password
+{
+	width: 350px; height: 25px;
+}
+#subLogin
+{
+	width: 350px; height: 30px; background: #00C5F7; border-color: #00C5F7;  color: #ffffff; border: 0px;
+}

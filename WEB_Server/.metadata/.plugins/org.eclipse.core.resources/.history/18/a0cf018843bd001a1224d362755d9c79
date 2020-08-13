@@ -1,0 +1,12 @@
+package article.service;
+
+import article.dao.ArticleContentDao;
+import article.dao.ArticleDao;
+
+public class ModifyArticleService {
+
+	private ArticleDao articleDao =new ArticleDao();
+	private ArticleContentDao contentDao = new ArticleContentDao();
+	
+	public void modify(ModifyRequest modReq);
+}

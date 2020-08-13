@@ -1,0 +1,9 @@
+package article.service;
+
+import article.dao.ArticleDao;
+
+public class ReadArticleService {
+
+	private ArticleDao articleDao = new ArticleDao();
+	
+}
