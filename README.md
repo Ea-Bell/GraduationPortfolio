@@ -43,6 +43,6 @@
 >     + Java(Adnroid Studio)  
      
 > 개발자
-> - 김성훈(ksh6687412@gmail.com)
-> - 이창종
-> - 김진태
+> + 김성훈(ksh6687412@gmail.com)
+> + 이창종
+> + 김진태
