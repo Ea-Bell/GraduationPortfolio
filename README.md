@@ -34,7 +34,7 @@
 
 >  개발언어
 >   - WEB/Server
->     + Java
+>     + JSP
 >     + SQL
 >   - PC(Desktop App)
 >     + C#     
