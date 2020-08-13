@@ -21,23 +21,23 @@
 >     + 휴대폰에 있는 음악 파일 재생
 >     + 재생 목록 저장
 >     + 사용자가 재생목록 생성
-----------
- * 개발도구
-   - WEB/Server
-     + Eclipse
-     + Apache Tomcat
-     + MySQL
-   - PC(Desktop App)
-     + Visual Studio
-   - Mobile(Android App)
-     + Android Studio
-* 개발언어
-   - WEB/Server
-     + Java
-     + SQL
-   - PC(Desktop App)
-     + C#     
-     + SQL
-   - Mobile(Android App)
-     + Java(Adnroid Studio)  
+
+>  개발도구
+>   - WEB/Server
+>     + Eclipse
+>     + Apache Tomcat
+>     + MySQL
+>   - PC(Desktop App)
+>     + Visual Studio
+>   - Mobile(Android App)
+>     + Android Studio
+>  개발언어
+>   - WEB/Server
+>     + Java
+>     + SQL
+>   - PC(Desktop App)
+>     + C#     
+>     + SQL
+>   - Mobile(Android App)
+>     + Java(Adnroid Studio)  
      
