@@ -27,19 +27,19 @@
 >     + Eclipse
 >     + Apache Tomcat
 >     + MySQL
->   - PC(Desktop App)
+>   - PC (Desktop App)
 >     + Visual Studio
->   - Mobile(Android App)
+>   - Mobile (Android App)
 >     + Android Studio
 
 >  개발언어
 >   - WEB/Server
 >     + JSP
 >     + SQL
->   - PC(Desktop App)
+>   - PC
 >     + C#     
 >     + SQL
->   - Mobile(Android App)
+>   - Mobile
 >     + Java(Adnroid Studio)  
      
 > 개발자
