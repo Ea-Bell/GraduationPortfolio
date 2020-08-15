@@ -44,5 +44,5 @@
      
 > 개발자
 > + 김성훈(ksh6687412@gmail.com)
-> + 이창종(cjp975@naver.com)
+> + 이창종(cjp975@naver.co)
 > + 김진태
