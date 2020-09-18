@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <link rel="stylesheet" type="text/css"
 	href="../../Model/mainForm/mainForm.css" />
 <script type="text/javascript" src="../../Model/mainForm/mainForm.js"></script>
@@ -18,16 +19,17 @@
 		<form action="mainForm.jsp" method="post">
 			<!-- 헤더 -->
 			<header>
-				<a href="index.jsp"> <img
-					src="../../img/logo.png"
-					style="position: relative; top: 15px; left: 0px; width: 140px; width:140px">
+				<a href="/index.do"> 
+				
+					 <img src="${pageContext.request.contextPath}/../img/logo.png"
+					 style="position: relative; top: 15px; left: 0px; width: 140px; width:140px">
 				</a> <input type="text" onclick=""
 					style="position: relative; left: 20px;">
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
 				<br>
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
-				&nbsp; <a href="../fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="<%=request.getContextPath()%>/../fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
