@@ -61,5 +61,19 @@
 		<servlet-name>ControllerUsingURI</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>index-jsp</servlet-name>
+		<jsp-file>/webTest/View/login/index.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	
+	<servlet-name>index-jsp</servlet-name>
+	<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	
+	
+
 
 </web-app>

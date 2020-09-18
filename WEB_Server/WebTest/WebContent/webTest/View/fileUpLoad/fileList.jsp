@@ -122,6 +122,8 @@ for(File tempFile : fileList) {
 %>
 
 	</tbody>
+	
+	
 	<tfoot>
 	<td style=" border-bottom: 1px solid #444444;
     padding: 10px;"></td>
