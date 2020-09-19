@@ -40,11 +40,6 @@
 >     + SQL
 >   - Mobile
 >     + Java(Adnroid Studio)  
-
-
->  각 폴더에 세부 기능 설명 및 사용 방법  ppt가 있습니다.
-
-
 > 개발자
 > + 김성훈(ksh6687412@gmail.com)
 > + 이창종(cjp975@naver.com)
