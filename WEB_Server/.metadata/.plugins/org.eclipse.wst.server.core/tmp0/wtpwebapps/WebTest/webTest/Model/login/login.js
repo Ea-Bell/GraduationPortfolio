@@ -3,6 +3,7 @@
  */
 
 // 이미지 바꾸기 함수
+
  function damaY() {
 	    var dama = document.getElementById('checkId');	  
 	    if (dama.src.match("check1")) {

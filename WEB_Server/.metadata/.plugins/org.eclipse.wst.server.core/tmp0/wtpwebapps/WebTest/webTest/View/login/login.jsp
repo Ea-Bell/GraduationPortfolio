@@ -15,37 +15,51 @@
 <link rel="stylesheet" type="text/css"
 	href="../../Model/mainForm/mainForm.css" />
 <meta charset="UTF-8">
-<title>main</title>
+
 
 </head>
 <script type="text/javascript" src="../../Model/mainForm/index.js"></script>
+
 <body>
+
+<header>
 	<div align="center">
 
 		<form action="mainForm.jsp" method="post">
 			<!-- 헤더 -->
-			<header>
-				<a href="index.jsp"> <img src="../../img/logo.png"
-					style="position: relative; top: 15px; left: 0px; width: 140px; width:140px">
-				</a> <input type="text" onclick=""
+			
+				<a href="/index" style="background: white;"> 
+					 <img src="/webTest/img/logo.png"
+					 style="position: relative; top: 15px; left: 0px; width: 140px; width:140px"></a>
+					  <input type="text" onclick=""
 					style="position: relative; left: 20px;">
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
 				<br>
+				
+				<hr id="head_line" size="10px" color="#ECB237">
+				
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
-				&nbsp; <a href="../chart/recentMusic.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="/webTest/View/fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
+						&nbsp; <a href="/webTest/article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
 				<br>
-				<br>
-
-			</header>
+				<br>			
 		</form>
-		</div>
-		<hr>
 
-		<div align="center">
+
+
+	</div>
+</header>
+		<hr id="head_line" size="10px" color="#ECB237">
+		<br>
+	<!-- 콘텐츠 -->
+	
+	
+		
+<div align="center">
 			<form action="/LoginHandler" method="post">
 				<br>
 
@@ -68,22 +82,25 @@
 				</div>
 				<br> <input type="submit" id="subLogin" value="로그인" /> <br />
 				<div align="center" style="height: 10px; width: 100%;"></div>
-				<span> <img src="../../img/login/check1.jpg" id="checkId" name="checkId" onclick="damaY()">로그인저장
+				<span> <img src="/webTest/img/login/check1.jpg" id="checkId" name="checkId" onclick="damaY()">로그인저장
 				 &nbsp; <a href="signUp.jsp">회원가입</a>
 
 				</span>
 				<p></p>
 			</form>
 		</div>
+	
+	
+	
+	
+		
+		
+	<!-- 바텀 -->
+	<div align="center">
 
+	
+		
+	</div>
 
-
-
-		<!-- 바텀 -->
-		<div align="center">
-
-
-			<br> <br>
-			<hr>
-		</div>
+</body>
 </html>

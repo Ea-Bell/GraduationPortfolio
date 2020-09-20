@@ -12,3 +12,24 @@
 7월 07, 2020 16:19:43.34 [13104:7716:0707/161943.343:ERROR:socket_stream.cc(218)] Closing stream with result -2
 7월 07, 2020 17:30:25.48 [13104:7716:0707/173025.487:ERROR:socket_stream.cc(218)] Closing stream with result -2
 7월 07, 2020 17:33:22.02 [13104:7716:0707/173322.023:ERROR:socket_stream.cc(218)] Closing stream with result -2
+
+8월 27, 2020 19:45:34.31 NEW SESSION
+8월 27, 2020 19:45:34.31 [16336:4860:0827/194534.310:ERROR:socket_stream.cc(219)] Closing stream with result -2
+
+9월 15, 2020 08:53:47.59 NEW SESSION
+9월 15, 2020 08:53:47.59 [9992:12644:0915/085347.588:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 15, 2020 09:11:00.59 [15416:2600:0915/091100.591:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+9월 16, 2020 16:33:42.28 NEW SESSION
+9월 16, 2020 16:33:42.28 [14604:2468:0916/163342.281:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 16, 2020 17:41:03.01 [16416:15376:0916/174103.011:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 17, 2020 24:38:22.42 [16416:15504:0917/003822.427:ERROR:socket_stream.cc(219)] Closing stream with result -2
+9월 17, 2020 03:38:27.52 [16416:15504:0917/033827.526:ERROR:socket_stream.cc(219)] Closing stream with result -2
+9월 19, 2020 03:10:19.98 [16416:15504:0919/031019.984:ERROR:socket_stream.cc(219)] Closing stream with result -2
+
+9월 19, 2020 19:02:38.11 NEW SESSION
+9월 19, 2020 19:02:38.11 [9512:16412:0919/190238.109:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 19, 2020 21:25:41.23 [9512:16448:0919/212541.229:ERROR:socket_stream.cc(219)] Closing stream with result -2
+
+9월 20, 2020 14:47:22.24 NEW SESSION
+9월 20, 2020 14:47:22.24 [2824:12692:0920/144722.239:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
