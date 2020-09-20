@@ -14,14 +14,14 @@
 <title>회원제 게시판 예시</title>
 </head>
 <body>
+<header>
 	<div align="center">
 
 		<form action="mainForm.jsp" method="post">
 			<!-- 헤더 -->
-			<header>
-				<a href="/index.do"> 
-				
-					 <img src="${pageContext.request.contextPath}/../img/logo.png"
+			
+				<a href="/index"> 
+					 <img src="WebContent/webTest/img/logo.png"
 					 style="position: relative; top: 15px; left: 0px; width: 140px; width:140px">
 				</a> <input type="text" onclick=""
 					style="position: relative; left: 20px;">
@@ -29,23 +29,23 @@
 				<br>
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
-				&nbsp; <a href="<%=request.getContextPath()%>/../fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="<%=request.getContextPath()%>/webTest/fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
 						&nbsp; <a href="../article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
 				<br>
-				<br>
-
-			</header>
+				<br>			
 		</form>
 
-		<hr id="hr">
-		<br>
+
 
 	</div>
-
+</header>
+		<hr id="hr">
+		<br>
 	<!-- 콘텐츠 -->
+	
 	<div id="content" align="center" style="background-color: #ffffff;">
 		<section id="main_section">
 			<article class="main_article"></article>
@@ -54,7 +54,7 @@
 
 		<aside id="main_aside">
 
-			<table border="1">
+			<table border="0">
 				<tr>
 					<td><c:if test="${empty authUser }">
 							<div align="center"><a href=""></a> <a href="../login/signUp.jsp">회원가입</a></div>
@@ -71,7 +71,7 @@
 			</table>
 
 			<br>
-			<table border="1">
+			<table border="0">
 				<tr>
 
 					<td>
@@ -85,7 +85,7 @@
 <aside id="main_bside">
 
 
-			<table ><thead>
+			<table >
 	<tr><span style="color: #ff8385">최신음악</span></tr>
 	<tr>
 		<td><img  src="../../img/newchart/다운로드.jpg" style="height: 80px; width: 80px;">	</td>
@@ -98,7 +98,7 @@
 		<td><img  src="../../img/newchart/다운로드 (5).jpg" style="height: 80px; width: 80px;">	</td>
 	</tr>
 			</table>
-					<table ><thead>
+					<table >
 	<tr><span style="color: #ff8385">이달의 음악</span></tr>
 	<tr>
 		<td><img  src="../../img/newchart/다운로드 (6).jpg" style="height: 80px; width: 80px;">	</td>

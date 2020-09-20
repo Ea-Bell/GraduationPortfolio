@@ -13,7 +13,7 @@ import util.ReqDispather;
 /**
  * Servlet implementation class index
  */
-@WebServlet("/index.do")
+@WebServlet("/index")
 public class MainHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private String url="/webTest/View/login/index.jsp";
@@ -36,7 +36,7 @@ public class MainHandler extends HttpServlet {
 		request.getRequestDispatcher(url).forward(request, response);
 		}else
 			doPost(request,response);
-
+		
 	}
 
 	/**

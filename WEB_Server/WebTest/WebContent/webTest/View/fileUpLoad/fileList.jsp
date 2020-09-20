@@ -11,73 +11,97 @@
 
 <meta charset="UTF-8">
 <title>최신음악</title>
+<link rel="stylesheet" type="text/css" href="/webTest/Model/login/info.css" />
+<link rel="stylesheet" type="text/css"
+	href="/webTest/Model/mainForm/mainForm.css" />
+<script type="text/javascript" src="/webTest/Model/mainForm/mainForm.js"></script>
 </head>
+<%-- 기본 기능 스크립트--%>
+<script type="text/javascript" src="/webTest/Model/login/info.js"></script>
+
+<%-- 다음 주소 스크립트--%>
+<script
+	src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
 <body>
+
+<header>
 	<div align="center">
 
 		<form action="mainForm.jsp" method="post">
-			<header>
-				<a href="../login/index.jsp"> <img
-					src="../../img/logo.png"
-					style="position: relative; top: 15px; left: 0px; width: 140px; width:140px">
-				</a> <input type="text" onclick=""
+			<!-- 헤더 -->
+			
+				<a href="/index" style="background: white;"> 
+					 <img src="/webTest/img/logo.png"
+					 style="position: relative; top: 15px; left: 0px; width: 140px; width:140px"></a>
+					  <input type="text" onclick=""
 					style="position: relative; left: 20px;">
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
 				<br>
+				
+				<hr id="head_line" size="10px" color="#ECB237">
+				
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
-				&nbsp; <a href="../fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="/webTest/View/fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
-						&nbsp; <a href="../article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
+						&nbsp; <a href="/webTest/View/article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
 				<br>
-				<br>
-
-			</header>
+				<br>			
 		</form>
 
-		<hr id="hr">
-		<br>
+
 
 	</div>
+</header>
+		<hr id="head_line" size="10px" color="#ECB237">
+		<br>
+	<!-- 사이드 컨텐츠 -->
+	<div style="padding:10px; width: 30%; float: right;">
+		<aside id="main_aside">
 
-	<!-- 콘텐츠 -->
-	<div id="content" align="center" style="background-color: #ffffff;" >
-		<section id="main_section">
-			<article class="main_article"></article>
-		</section>
-		<!-- 메인 섹션 건들지 말것. -->
-
-		<aside id="main_aside" >
-
-			<table border="1">
+			<table border="0">
 				<tr>
 					<td><c:if test="${empty authUser }">
-							<div align="center"><a href=""></a> <a href="../login/signUp.jsp">회원가입</a></div>
-							<a href="../login/login.jsp" ><img alt="" src="../../img/login/login.png" style="height: 42px; width: 244px;"></a>
+							<div align="center"><a href=""></a> <a href="/webTest/login/signUp.jsp">회원가입</a></div>
+							<a href="/webTest/login/login.jsp" ><img alt="" src="/webTest/img/login/login.png" style="height: 42px; width: 244px;"></a>
 							<br>
 
 						</c:if> <c:if test="${!empty authUser}">
 				${authUser.nickname}님, 안녕하세요.<br />
-							<a href="/WebTest/LogoutHandler">[로그아웃하기]</a>
-							<a href="../login/changePwdForm.jsp">[암호변경하기]</a>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../list/newMusicForm.jsp">[마이페이지]</a>
+							<a href="/LogoutHandler">[로그아웃하기]</a>
+							<a href="changePwdForm.jsp">[암호변경하기]</a>
+									<a href="/webTest/list/newMusicForm.jsp">[마이페이지]</a>
 						</c:if></td>
 				</tr>
 			</table>
 
 			<br>
-			<table border="1">
+			<table border="0">
 				<tr>
-				<td><a href="../../../나는가수다.msi" download=>Window다운로드</a></td>
+
+					<td>
+				<a href="/webTest/나는가수다.msi" download=>Window다운로드</a>
+					</td>
+
 				</tr>
 			</table>
 
 		</aside>
+		</div>
+		
+		<div id="content"  style="padding:10px; width: 65%;  float: left;" >
 
+<!-- 메인 컨텐츠 -->
+<div style="float: left; width: 60%;">
+<!-- 공백 div -->
+<div style=" width: 5%; float: left;  height: 60%" >
 
-<div style="	color: #ff8000;	background-color:ff8000; ">
+</div>
+
+<div style="float: right;width: 50%">
 <%
 int i=1;
 String savedir3 = "C:\\Users\\EaBEll\\Desktop\\java\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\WebTest\\webTest\\upload";
@@ -113,7 +137,7 @@ for(File tempFile : fileList) {
     <td><%=i++ %></td>
    	<td> <%=tempFileName.toString() %></td>	
 		<td >
-		<a href="../../upload/<%=tempFileName.toString() %>" download="<%=tempFileName.toString() %>"><img src="../../img/chart/download.jpg" style="width:32px ; height: 32 px;" ></a>
+		<a href="../../upload/<%=tempFileName.toString() %>" download="<%=tempFileName.toString() %>"><img src="/webTest/img/chart/download.jpg" style="width:32px ; height: 32 px;" ></a>
 		</td>
 	</tr>
 	<% 
@@ -136,25 +160,15 @@ for(File tempFile : fileList) {
 	 <ul class="pagination">
     
   </ul>
-
-   
-
-
 </div>
-	
-
+ 
+</div>
 		
-
-
-
-
-
-	</div>
 	<!-- 바텀 -->
 	<div align="center">
 
-		<br> <br>
-		<hr>
+	
+		
 	</div>
 
 </body>
