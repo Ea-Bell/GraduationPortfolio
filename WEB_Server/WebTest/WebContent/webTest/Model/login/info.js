@@ -3,7 +3,10 @@
  */
 
 
+
+
 function email_change(){
+	
 /*
 if(document.join.email.options[document.join.email.selectedIndex].value == '0'){
 
@@ -14,7 +17,53 @@ if(document.join.email.options[document.join.email.selectedIndex].value == '0'){
 }
 */
 
+	
+	
 }
+	function pwErrorCheck(){
+	    var pw = document.join.wUserPW.value;
+	    //var confirmPW = document.join.wUserPWConfirm.value;
+	    if (pw.length < 6 || pw.length > 16) {
+	        window.alert('비밀번호는 6글자 이상, 16글자 이하만 이용 가능합니다.');
+	        document.join.pw.value =""
+	        document.join.pwCheck.value="";
+	        document.join.pw.focus();
+	    }    
+	}
+
+
+	function isSame(){    
+		var pw = document.join.pw.value;
+	    var confirmPW = document.join.confirmPW.value;
+		if(pw !="" && confirmPW!="") {
+	        if(pw == confirmPW) {
+	        	  document.getElementById('check').innerHTML='비밀번호가 일치합니다.'
+	              document.getElementById('check').style.color='blue';
+	        }
+	        else {
+	        	document.getElementById('check').innerHTML='비밀번호가 일치하지 않습니다.';
+	            document.getElementById('check').style.color='red';
+	        }
+	    }	
+	}
+	
+
+
+
+function SetEmailTail(emailValue) {	  
+	  if ( emailValue == "notSelected" ){
+		  document.join.email2.readOnly = true;
+		  document.join.email2.value = "";   
+	  }	   
+	  else if ( emailValue == "etc" ) {
+		  document.join.email2.readOnly = false;
+		  document.join.email2.value = "";   
+	  } else {
+		  document.join.email2.readOnly = true;
+		  document.join.email2.value = emailValue;
+	  }
+}
+
 
 function Btn(index){
 	
@@ -34,6 +83,8 @@ function Btn(index){
 		}
 	document.join.submit();
 }
+
+
 
 //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
 function sample4_execDaumPostcode() {

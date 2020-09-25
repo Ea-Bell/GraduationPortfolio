@@ -25,7 +25,7 @@
 <header>
 	<div align="center">
 
-		<form action="mainForm.jsp" method="post">
+		<form action="" method="post">
 			<!-- 헤더 -->
 			
 				<a href="/index" style="background: white;"> 
@@ -40,11 +40,11 @@
 				
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
-				&nbsp; <a href="/webTest/View/fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="/fileList" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
-						&nbsp; <a href="/webTest/article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
+						&nbsp; <a href="/ListArticleHandler"  id="nav3" style="color: black;">게시판</a>					
 				<br>
 				<br>			
 		</form>
@@ -83,7 +83,7 @@
 				<br> <input type="submit" id="subLogin" value="로그인" /> <br />
 				<div align="center" style="height: 10px; width: 100%;"></div>
 				<span> <img src="/webTest/img/login/check1.jpg" id="checkId" name="checkId" onclick="damaY()">로그인저장
-				 &nbsp; <a href="signUp.jsp">회원가입</a>
+				 &nbsp; <a href="/signUp">회원가입</a>
 
 				</span>
 				<p></p>

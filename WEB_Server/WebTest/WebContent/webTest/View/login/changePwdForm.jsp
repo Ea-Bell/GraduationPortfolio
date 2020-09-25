@@ -32,11 +32,11 @@
 				
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
-				&nbsp; <a href="/webTest/View/fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="/fileList" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
-						&nbsp; <a href="/webTest/article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
+						&nbsp; <a href="/ListArticle"  id="nav3" style="color: black;">게시판</a>					
 				<br>
 				<br>			
 		</form>
@@ -89,14 +89,14 @@
 				<tr>
 					<td><c:if test="${empty authUser }">
 							<div align="center"><a href=""></a> <a href="/webTest/login/signUp.jsp">회원가입</a></div>
-							<a href="/webTest/login/login.jsp" ><img alt="" src="/webTest/img/login/login.png" style="height: 42px; width: 244px;"></a>
+							<a href="/signUp" ><img alt="" src="/webTest/img/login/login.png" style="height: 42px; width: 244px;"></a>
 							<br>
 
 						</c:if> <c:if test="${!empty authUser}">
 				${authUser.nickname}님, 안녕하세요.<br />
 							<a href="/LogoutHandler">[로그아웃하기]</a>
-							<a href="changePwdForm.jsp">[암호변경하기]</a>
-									<a href="/webTest/list/newMusicForm.jsp">[마이페이지]</a>
+							<a href="/changePwdForm">[암호변경하기]</a>
+									<a href="/fileUpLoad">[마이페이지]</a>
 						</c:if></td>
 				</tr>
 			</table>
@@ -106,7 +106,7 @@
 				<tr>
 
 					<td>
-				<a href="/webTest/나는가수다.msi" download=>Window다운로드</a>
+				<a href="/나는가수다.msi" download=>Window다운로드</a>
 					</td>
 
 				</tr>

@@ -18,7 +18,7 @@ import auth.service.User;
 /**
  * Servlet implementation class WriteArticleHandler
  */
-@WebServlet("/WebTest/WriteArticleHandler")
+@WebServlet("/WriteArticle")
 public class WriteArticleHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final String FORM_VIEW = "webTest/View/article/newArticleForm.jsp";

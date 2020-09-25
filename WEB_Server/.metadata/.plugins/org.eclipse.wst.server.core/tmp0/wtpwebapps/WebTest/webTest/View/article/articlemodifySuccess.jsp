@@ -9,7 +9,7 @@
 <body>
 
 게시글을 수정 했습니다.
-<a href="/WebTest/ListArticleHandler">[게시글 목록보기]</a>
-<a href="/WebTest/article/read.do?no=${modReq.articleNumber}">[게시글 내용보기]</a>
+<a href="/ListArticle">[게시글 목록보기]</a>
+<a href="/read?no=${modReq.articleNumber}">[게시글 내용보기]</a>
 </body>
 </html>

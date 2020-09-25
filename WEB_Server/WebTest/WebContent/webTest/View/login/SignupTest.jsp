@@ -8,11 +8,6 @@
 </head>
 <body>
 
-
-
-
-
-
 	<div align="center">
 		<h3>회원정보</h3>
 		<form action="/Test_jsp/DB" method="post" name="form2" name="ddd">

@@ -39,11 +39,11 @@
 				
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
-				&nbsp; <a href="/webTest/View/fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="/fileList" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
-						&nbsp; <a href="/webTest/article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
+						&nbsp; <a href="/ListArticle"  id="nav3" style="color: black;">게시판</a>					
 				<br>
 				<br>			
 		</form>
@@ -61,15 +61,15 @@
 			<table border="0">
 				<tr>
 					<td><c:if test="${empty authUser }">
-							<div align="center"><a href=""></a> <a href="/webTest/login/signUp.jsp">회원가입</a></div>
-							<a href="/webTest/login/login.jsp" ><img alt="" src="/webTest/img/login/login.png" style="height: 42px; width: 244px;"></a>
+							<div align="center"><a href=""></a> <a href="/signUp">회원가입</a></div>
+							<a href="/Login" ><img alt="" src="/webTest/img/login/login.png" style="height: 42px; width: 244px;"></a>
 							<br>
 
 						</c:if> <c:if test="${!empty authUser}">
 				${authUser.nickname}님, 안녕하세요.<br />
 							<a href="/LogoutHandler">[로그아웃하기]</a>
-							<a href="changePwdForm.jsp">[암호변경하기]</a>
-									<a href="/webTest/list/newMusicForm.jsp">[마이페이지]</a>
+							<a href="/changePwdForm">[암호변경하기]</a>
+									<a href="/fileUpLoad">[마이페이지]</a>
 						</c:if></td>
 				</tr>
 			</table>
@@ -79,7 +79,7 @@
 				<tr>
 
 					<td>
-				<a href="/webTest/나는가수다.msi" download=>Window다운로드</a>
+				<a href="/나는가수다.msi" download=>Window다운로드</a>
 					</td>
 
 				</tr>
@@ -114,10 +114,10 @@
 <tr>
 	<td colspan="2">
 	<c:set var="pageNo" value="${empty param.pageNo?'1':param.pageNo}"/>
-		<a href="/WebTest/ListArticleHandler?pageNo=${pageNo }">[목록]</a>
+		<a href="/ListArticle?pageNo=${pageNo}">[목록]</a>
 		<c:if test="${authUser.id== articleData.article.writer.id }">
-		<a href="/WebTest/modify.do?no=${articleData.article.number }">[게시글 수정]</a>
-		<a href="/WebTest/delete.do?no=${articleData.article.number }">[게시글 삭제]</a>
+		<a href="/modify?no=${articleData.article.number}">[게시글 수정]</a>
+		<a href="/delete?no=${articleData.article.number}"  onclick="return confirm('삭제하시겠습니까?')">[게시글 삭제]</a>
 		</c:if>
 		</td>
 </tr>
@@ -137,4 +137,6 @@
 	</div>
 
 </body>
+
+
 </html>

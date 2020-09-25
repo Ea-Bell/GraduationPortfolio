@@ -11,20 +11,25 @@
 <link rel="stylesheet" type="text/css"
 	href="/webTest/Model/mainForm/mainForm.css" />
 <script type="text/javascript" src="/webTest/Model/mainForm/mainForm.js"></script>
+
 </head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <%-- 기본 기능 스크립트--%>
 <script type="text/javascript" src="/webTest/Model/login/info.js"></script>
 
 <%-- 다음 주소 스크립트--%>
 <script
-	src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js">
+</script>
+
+
 
 <body>
 
 <header>
 	<div align="center">
 
-		<form action="mainForm.jsp" method="post">
+		<form action="" method="post">
 			<!-- 헤더 -->
 			
 				<a href="/index" style="background: white;"> 
@@ -39,24 +44,23 @@
 				
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
-				&nbsp; <a href="/webTest/View/fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="/fileList" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
-						&nbsp; <a href="/webTest/article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
+						&nbsp; <a href="/ListArticle"  id="nav3" style="color: black;">게시판</a>					
 				<br>
 				<br>			
 		</form>
-
-
-
 	</div>
 </header>
 		<hr id="head_line" size="10px" color="#ECB237">
 		<br>
 	<!-- 콘텐츠 -->
 	
-	<div id="content"  style="border:1px solid blue; padding:10px; width: 65%;  float: left;" >
+	<div id="content"  style=" width: 65%;  float: left;" >
+		
+
 		
 
 <form action="" name="join" method="post">
@@ -78,17 +82,36 @@
 					<td><input type="text" size="30" name="nickname"> <c:if
 							test="${errors.nickname }">닉네임을 입력하시오.</c:if></td>
 				</tr>
+				
 				<tr>
 					<td align="center" id="iColor">비밀번호<span id="iSpan">*</span></td>
-					<td><input type="password" size="30" name="pw"> <c:if
-							test="${errors.pw}}">암호를 입력하시오</c:if></td>
+					<td><input type="password" name="pw" id="pw" onchange="pwErrorCheck()" />&nbsp; &nbsp;
+					<span>비밀번호는 6글자 이상, 16글자 이하여야 합니다.</span>
+					</td>					
 				</tr>
 				<tr>
 					<td align="center" id="iColor">비밀번호 확인<span id="iSpan">*</span></td>
-					<td><input type="password" size="30"> <input type="submit"
-						value="확인" name="confirmPw" onclick="Btn(3)"> <c:if
-							test="${errors.confirmPw}">암호를 입력하시오.</c:if></td>
-				</tr>
+					<td><input type="password" name="pwCheck" id="pwCheck" />
+				<font id="chkNotice"size="1"></font>		
+					</td>	
+															
+				</tr> 
+
+<!-- 			<tr>
+					<td align="center" id="iColor">비밀번호<span id="iSpan">*</span></td>
+					<td><input type="password" name="pw" id="pw" onchange="pwErrorCheck()" />&nbsp;
+					<span>비밀번호는 6글자 이상, 16글자 이하여야 합니다.</span>
+					</td>					
+				</tr> 
+				<tr>
+					<td align="center" id="iColor">비밀번호 확인<span id="iSpan">*</span></td>
+					<td><input type="password" name="pwCheck" id="pwCheck" oninput="isSame()"/>&nbsp;
+					<span id="check"></span>
+					</td>				
+				</tr>  -->
+
+
+
 				<tr>
 					<td align="center" id="iColor">이름<span id="iSpan">*</span></td>
 					<td><input type="text" size="30" name="name"
@@ -96,7 +119,7 @@
 					</td>
 				</tr>
 
-							<!-- 성별에서 디비 오류남 -->
+							
 				<tr>
 					<td align="center" id="iColor">성별<span id="iSpan">*</span></td>
 					<td><input type="radio" name="gender" value="남">남자 <input
@@ -122,15 +145,27 @@
 				
 				
 			<td>
-			<input type="text" name ="email1">@
-			<input type="text" name ="email2">
+			
+<!-- 	버전1		<input type="text" name ="email1">
+			@
+			<input type="text" name ="email2"> -->
+			
+				<input type="text" name="email1" value="" />
+   			    @
+			    <input type="text" name="email2" value="" ReadOnly="true"/>
+			    <select name="emailCheck"
+			    onchange="SetEmailTail(emailCheck.options[this.selectedIndex].value)">
+    			    <option value="notSelected" >::선택하세요::</option>
+    			    <option value="etc">직접입력</option>
+    			    <option value="naver.com">naver.com</option>
+    			    <option value="hanmail.net">hanmail.net</option>    			       
+				    <option value="gmail.com">gmail.com</option>
+   				</select>
 			
 			</td>
 				<%-- 테스트 해야한다
-<!-- 이메일  오류 있으니 이메일 체인지 찾아서 수정해서 완료할것(완료시 주석 삭제 요청함) --> 
-					 
-					<td>
-						
+<!-- 이메일  오류 있으니 이메일 체인지 찾아서 수정해서 완료할것(완료시 주석 삭제 요청함) --> 					 
+					<td>						
 						<input type="text" name="email1" onfocus="this.value='';"> @ 
 						<input type="text" name="email2" value="" disabled>
 						 <select name="email1" onchange="email_change()">
@@ -142,8 +177,7 @@
 							<option value="nate.com">nate.com</option>
 					</select> <!-- 이메일끝 요기서 이메일 텍스트 부분을 3가지로 나눠서 생각하시오 --> <c:if
 							test="errors.email">이메일을 입력하시오</c:if>
-					</td>
-					
+					</td>					
 					 --%>
 				</tr>
 				<tr>
@@ -170,11 +204,14 @@
 			</table>
 		</div>
 	</form>
+	
 	</div>
 	
 	
 	
-	<div style="padding:10px; width: 30%; float: right;">
+	
+	
+	<div style="padding:10px; width: 20%; float: right;">
 		<aside id="main_aside">
 
 			<table border="0">
@@ -215,6 +252,26 @@
 	
 		
 	</div>
+<!--  미사용 JQuery 	
+	<script >	
+	$(function(){
+	    $('#pw').keyup(function(){
+	      $('#chkNotice').html('');
+	    });
 
+	    $('#pwCheck').keyup(function(){
+
+	        if($('#pw').val() != $('#pwCheck').val()){
+	          $('#chkNotice').html('비밀번호 일치하지 않음');
+	          $('#chkNotice').attr('color', '#f82a2aa3');
+	        } else{
+	          $('#chkNotice').html('비밀번호 일치함');
+	          $('#chkNotice').attr('color', '#199894b3');
+	        }
+
+	    });
+	});
+
+</script>  -->
 </body>
 </html>

@@ -37,8 +37,10 @@ public class JoinServiece {
 								);
 				conn.commit();				
 			}catch (SQLException e) {
+				System.out.println(e.getMessage());
 				JdbcUtil.rollback(conn);
 				throw new RuntimeException(e);
+				
 				
 				// TODO: handle exception
 			}finally {

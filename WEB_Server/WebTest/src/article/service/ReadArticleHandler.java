@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ReadArticleHandler
  */
-@WebServlet("/article/read.do")
+@WebServlet("/read")
 public class ReadArticleHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	

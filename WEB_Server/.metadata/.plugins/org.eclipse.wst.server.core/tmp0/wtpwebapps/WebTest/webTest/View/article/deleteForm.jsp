@@ -7,7 +7,7 @@
 <title>게시글 삭제</title>
 </head>
 <body>
-<form action="/WebTest/delete.do" method="POST">
+<form action="/delete" method="POST">
 	<p>
 		번호:<br/>${delReq.articleNumber}
 	</p>

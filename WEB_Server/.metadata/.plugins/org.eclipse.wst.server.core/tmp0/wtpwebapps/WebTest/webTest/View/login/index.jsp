@@ -34,24 +34,25 @@
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
 					
-				&nbsp; <a href="/webTest/View/fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="/fileList" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
-						&nbsp; <a href="/webTest/View/article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
+						&nbsp; <a href="/ListArticle"  id="nav3" style="color: black;">게시판</a>					
 				<br>
 				<br>			
 		</form>
-
 
 
 	</div>
 </header>
 		<hr id="head_line" size="10px" color="#ECB237">
 		<br>
+		<div id="leftblank" style="height:800px; width: 10%; float:left;" >
+		</div>
 	<!-- 콘텐츠 -->
-	
-	<div style="padding:10px; width: 30%; float: right;">
+	<div class="content" style="width:70%; float:left;">
+	<div style="padding:10px; width: 30%; float: right; background: bl">
 		<section id="main_section">
 			<article class="main_article"></article>
 		</section>
@@ -62,15 +63,15 @@
 			<table border="0">
 				<tr>
 					<td><c:if test="${empty authUser }">
-							<div align="center"><a href=""></a> <a href="/webTest/View/login/signUp.jsp">회원가입</a></div>
-							<a href="/webTest/View/login/login.jsp" ><img alt="" src="/webTest/img/login/login.png" style="height: 42px; width: 244px;"></a>
+							<div align="center"><a href=""></a> <a href="/signUp">회원가입</a></div>
+							<a href="/Login" ><img alt="" src="/webTest/img/login/login.png" style="height: 42px; width: 244px;"></a>
 							<br>
 
 						</c:if> <c:if test="${!empty authUser}">
 				${authUser.nickname}님, 안녕하세요.<br />
 							<a href="/LogoutHandler">[로그아웃하기]</a>
-							<a href="changePwdForm.jsp">[암호변경하기]</a>
-							<a href="/webTest/View/list/newMusicForm.jsp">[마이페이지]</a>
+							<a href="/changePwdForm">[암호변경하기]</a>
+							<a href="/fileUpLoad">[마이페이지]</a>
 						</c:if></td>
 				</tr>
 			</table>
@@ -87,7 +88,7 @@
 
 		</aside>
 		</div>
-		<div id="content"  style="padding:10px; width: 65%;  float: left;" >
+		<div id="content"  style="padding:10px; width: 55%;  float: left;" >
 
 <div style="float: left; width: 30%;">
 			<table >
@@ -138,6 +139,8 @@
 
 
 	</div>
-
+</div>
+<!-- 		<div id="rightblank" style="height:800px; width: 10%; float:left;">
+		</div> -->
 </body>
 </html>

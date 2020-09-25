@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="UpLoad"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="upload"/>
+			<item value="upload&#x09;"/>
+			<item value="&#x09;"/>
+			<item value="FileUpload.jsp"/>
 			<item value="&lt;jsp"/>
 			<item value="jsp"/>
 			<item value="context"/>
@@ -19,10 +23,6 @@
 			<item value="validationQuery"/>
 			<item value="poolConfig"/>
 			<item value="Name"/>
-			<item value="img"/>
-			<item value="Host"/>
-			<item value="host"/>
-			<item value="sever"/>
 		</list>
 		<list key="replacehistory">
 			<item value="request"/>

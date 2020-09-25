@@ -16,7 +16,7 @@ import article.service.ListArticleService;
 /**
  * Servlet implementation class ListArticleHandler
  */
-@WebServlet("/ListArticleHandler")
+@WebServlet("/ListArticle")
 public class ListArticleHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	ArticlePage articlePage;

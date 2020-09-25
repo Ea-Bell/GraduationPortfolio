@@ -22,7 +22,7 @@ import auth.service.User;
 /**
  * Servlet implementation class DeleteArticleHandler
  */
-@WebServlet("/delete.do")
+@WebServlet("/delete")
 public class DeleteArticleHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private static final String FORM_VIEW = "/webTest/View/article/deleteForm.jsp";
@@ -49,7 +49,13 @@ public class DeleteArticleHandler extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		if(request.getMethod().equalsIgnoreCase("GET")) {
-			processForm(request, response);	
+			//processForm(request, response);	
+			try {
+				processSubmit(request,response);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}else
 			
 		doPost(request, response);		
@@ -61,13 +67,13 @@ public class DeleteArticleHandler extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		try {			 
-			 //값이 안넘어 오는거 확인됨 처리 요망후 삭제
-			processSubmit(request,response);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
+//		try {			 
+//			 //값이 안넘어 오는거 확인됨 처리 요망후 삭제
+//			processSubmit(request,response);
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}	
 	}
 	
 	
@@ -84,9 +90,9 @@ public class DeleteArticleHandler extends HttpServlet {
 		
 		try {
 			deleteService.Dlete(delReq);
-			RequestDispatcher dispatcher = req.getRequestDispatcher("/webTest/View/article/articledeleteSuccess.jsp");
-			dispatcher.forward(req, res);
-			//res.sendRedirect("/webTest/View/articlemodifySuccess.jsp");
+//			RequestDispatcher dispatcher = req.getRequestDispatcher("/ListArticle");
+//			dispatcher.forward(req, res);
+			res.sendRedirect("/ListArticle");
 		}catch (Exception e) {
 			// TODO: handle exception
 			res.sendError(HttpServletResponse.SC_NOT_FOUND);

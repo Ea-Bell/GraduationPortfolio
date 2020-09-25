@@ -31,5 +31,31 @@
 9월 19, 2020 19:02:38.11 [9512:16412:0919/190238.109:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
 9월 19, 2020 21:25:41.23 [9512:16448:0919/212541.229:ERROR:socket_stream.cc(219)] Closing stream with result -2
 
-9월 20, 2020 14:47:22.24 NEW SESSION
-9월 20, 2020 14:47:22.24 [2824:12692:0920/144722.239:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 22, 2020 08:12:05.60 NEW SESSION
+9월 22, 2020 08:12:05.60 [15824:21116:0922/081205.605:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 22, 2020 08:54:33.19 [15824:10636:0922/085433.198:ERROR:socket_stream.cc(219)] Closing stream with result -2
+
+9월 23, 2020 17:02:15.97 NEW SESSION
+9월 23, 2020 17:02:15.97 [15976:8076:0923/170215.967:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 23, 2020 17:03:26.09 [19532:14048:0923/170326.090:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 23, 2020 17:03:32.01 [19124:18576:0923/170332.017:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+9월 23, 2020 21:33:26.20 NEW SESSION
+9월 23, 2020 21:33:26.20 [256:15584:0923/213326.204:ERROR:cache_util_win.cc(21)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+9월 23, 2020 21:33:26.23 [256:15584:0923/213326.205:ERROR:cache_util.cc(139)] Unable to move cache folder C:\Users\EaBEll\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\EaBEll\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+9월 23, 2020 21:33:26.26 [256:15584:0923/213326.205:ERROR:disk_cache.cc(184)] Unable to create cache
+9월 23, 2020 21:33:26.27 [256:15584:0923/213326.205:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+9월 23, 2020 21:33:26.32 [9176:14160:0923/213326.328:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 23, 2020 21:33:27.36 기존 브라우저 세션에서 여는 중입니다.
+
+9월 23, 2020 23:18:34.88 NEW SESSION
+9월 23, 2020 23:18:34.88 [16400:6896:0923/231834.882:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+
+9월 25, 2020 14:36:06.39 NEW SESSION
+9월 25, 2020 14:36:06.39 [8404:14568:0925/143606.393:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.
+9월 25, 2020 16:02:43.11 [8404:10768:0925/160243.112:ERROR:socket_stream.cc(219)] Closing stream with result -2
+9월 25, 2020 17:28:06.39 [8404:10768:0925/172806.389:ERROR:socket_stream.cc(219)] Closing stream with result -2
+9월 25, 2020 18:02:59.62 [8404:10768:0925/180259.620:ERROR:mcs_client.cc(755)] Received close command, resetting connection.
+
+9월 25, 2020 21:25:02.20 NEW SESSION
+9월 25, 2020 21:25:02.20 [3124:6772:0925/212502.205:ERROR:media_history_store.cc(363)] Failed to create or update the media history store.

@@ -24,7 +24,7 @@
 <header>
 	<div align="center">
 
-		<form action="mainForm.jsp" method="post">
+		<form action="" method="post">
 			<!-- 헤더 -->
 			
 				<a href="/index" style="background: white;"> 
@@ -39,15 +39,14 @@
 				
 				<br> <a href="" onmouseover="TextMover()"
 					onmouseout="TextMount()" id="nav" style="color: black;">차트</a>
-				&nbsp; <a href="/webTest/View/fileUpLoad/fileList.jsp" onmouseover="TextMover2()"
+				&nbsp; <a href="/fileList" onmouseover="TextMover2()"
 					onmouseout="TextMount2()" id="nav2" style="color: black;">최신음악</a>
 				&nbsp; <a href="" onmouseover="TextMover3()"
 					onmouseout="TextMount3()" id="nav3" style="color: black;">장르음악</a>
-						&nbsp; <a href="/webTest/article/list.jsp"  id="nav3" style="color: black;">게시판</a>					
+						&nbsp; <a href="/ListArticle"  id="nav3" style="color: black;">게시판</a>					
 				<br>
 				<br>			
 		</form>
-
 
 
 	</div>
@@ -61,7 +60,7 @@
 			<table border="0">
 				<tr>
 					<td><c:if test="${empty authUser }">
-							<div align="center"><a href=""></a> <a href="/webTest/login/signUp.jsp">회원가입</a></div>
+							<div align="center"><a href=""></a> <a href="/signUp">회원가입</a></div>
 							<a href="/webTest/login/login.jsp" ><img alt="" src="/webTest/img/login/login.png" style="height: 42px; width: 244px;"></a>
 							<br>
 

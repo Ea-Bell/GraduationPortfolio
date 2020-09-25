@@ -22,7 +22,7 @@ import auth.service.User;
 /**
  * Servlet implementation class ModifyArticleHandler
  */
-@WebServlet("/modify.do")
+@WebServlet("/modify")
 public class ModifyArticleHandler extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private static final String FORM_VIEW = "/webTest/View/article/modifyForm.jsp";
@@ -95,9 +95,9 @@ public class ModifyArticleHandler extends HttpServlet {
 			dispatcher.forward(req, res);
 		}try {
 			modifyService.modify(modReq);
-			RequestDispatcher dispatcher = req.getRequestDispatcher("/webTest/View/article/articlemodifySuccess.jsp");
-			dispatcher.forward(req, res);
-			res.sendRedirect("/webTest/View/articlemodifySuccess.jsp");
+//			RequestDispatcher dispatcher = req.getRequestDispatcher("/webTest/View/article/articlemodifySuccess.jsp");
+//			dispatcher.forward(req, res);
+			res.sendRedirect("/ListArticle");
 		}catch (Exception e) {
 			// TODO: handle exception
 			res.sendError(HttpServletResponse.SC_NOT_FOUND);
